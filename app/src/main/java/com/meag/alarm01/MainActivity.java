@@ -10,20 +10,34 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 Button setbutton;
-    @Override
+int h;
+int m;
+String value2;
+String value;
+EditText hor;
+EditText minu;
+
+@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        hor = (EditText) findViewById(R.id.horas);
+        minu = (EditText) findViewById(R.id.minutos);
+
 
         setbutton=findViewById(R.id.setalarm);
         setbutton.setOnClickListener(new View.OnClickListener() {
 
-            EditText hor = (EditText) findViewById(R.id.horas);
-            EditText minu = (EditText) findViewById(R.id.minutos);
-            Integer h = (Integer) Integer.parseInt(hor.getText().toString());
-            Integer m = (Integer) Integer.parseInt(minu.getText().toString());
+
+
+
+
             @Override
             public void onClick(View v) {
+                value= hor.getText().toString();
+                h=Integer.parseInt(value);
+                value2= minu.getText().toString();
+                m=Integer.parseInt(value2);
                 setalarms("Alarm has been set",h,m);
             }
         });

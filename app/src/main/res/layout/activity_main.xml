@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_marginTop="100dp"
         android:weightSum="1">
 
@@ -25,7 +26,8 @@
             android:layout_width="130dp"
             android:layout_height="100dp"
             android:background="#61a39292"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:textAlignment="center"/>
     </LinearLayout>
 
     <RelativeLayout
@@ -39,10 +41,8 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="100dp"
             android:text="Set"
-            android:textColor="#ffffff"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:background="#3d42c9"
             />
     </RelativeLayout>
 </RelativeLayout>

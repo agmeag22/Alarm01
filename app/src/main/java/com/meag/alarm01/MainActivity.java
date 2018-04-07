@@ -38,7 +38,8 @@ EditText minu;
                 h=Integer.parseInt(value);
                 value2= minu.getText().toString();
                 m=Integer.parseInt(value2);
-                setalarms("Alarm has been set",h,m);
+                if(h>=0 && h<=24 && m>=0 && m<=59){
+                setalarms("Alarm has been set",h,m);}
             }
         });
     }

@@ -11,29 +11,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+
         android:layout_marginTop="100dp"
         android:weightSum="1">
-
         <EditText
             android:id="@+id/horas"
             android:layout_width="130dp"
             android:layout_height="100dp"
             android:background="#38ac9999"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
         <EditText
             android:id="@+id/minutos"
             android:layout_width="130dp"
             android:layout_height="100dp"
             android:background="#61a39292"
             android:inputType="number"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:textStyle="bold"/>
     </LinearLayout>
-
-    <RelativeLayout
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/layout1">
+        android:layout_marginTop="30dp"
+        android:layout_alignTop="@+id/layout2"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:background="#3d42c9"
+        android:text="Formato 24 Horas"/>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_centerHorizontal="true">
         <Button
             android:id="@+id/setalarm"
             android:layout_width="wrap_content"
@@ -41,8 +55,10 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="100dp"
             android:text="Set"
+            android:textColor="#ffffff"
             android:textSize="22sp"
             android:textStyle="bold"
-            />
-    </RelativeLayout>
+            android:background="#3d42c9"/>
+    </LinearLayout>
 </RelativeLayout>
+
